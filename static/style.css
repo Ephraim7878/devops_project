@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+}
+.navbar {
+  background: linear-gradient(90deg, #00ffaa, #00c6ff);
+}
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+footer {
+  background-color: #f1f5f9;
+}

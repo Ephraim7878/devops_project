@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-blog-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-blog
+  template:
+    metadata:
+      labels:
+        app: flask-blog
+    spec:
+      containers:
+      - name: flask-blog
+        image: ephraim7878/flask-blog:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
